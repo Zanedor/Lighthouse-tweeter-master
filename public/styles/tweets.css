@@ -1,0 +1,93 @@
+
+body{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+article.tweet {
+  display:  block;
+  border:   1px solid #ccc;
+  margin:   10px 0px;
+  border-radius: 5px;
+}
+article.tweet .tweet-body {
+  padding-left: 105px;
+}
+article.tweet header {
+  padding:  8px;
+  background-color: #eee;
+  border-radius: 5px 5px 0px 0px;
+  opacity: 0.7;
+  transition: all 0.25s ease-in-out;
+}
+article.tweet:hover {
+  border-color: #666;
+}
+article.tweet:hover header {
+  opacity: 1.0;
+}
+article.tweet header:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+article.tweet header img.user-avatar {
+  float: left;
+  width: 50px;
+  height: 50px;
+  background-color: white;
+  border-radius: 5px;
+}
+article.tweet header h2.user-name {
+  float: left;
+  margin: 0px 0px 0px 10px;
+}
+article.tweet header small.user-handle {
+  float: right;
+  color: #777;
+  margin-top: 8px;
+}
+article.tweet .body {
+  margin:  5px;
+  padding: 10px 8px;
+}
+article.tweet footer {
+  padding: 8px;
+  border-top: 1px solid #EEE;
+  margin-top: 8px;
+  font-size: 0.8em;
+}
+article.tweet footer .actions {
+  transition: opacity 0.15s ease-in-out;
+  opacity: 0;
+  float: right;
+}
+article.tweet:hover footer .actions {
+  opacity: 1;
+}
+article.tweet footer .actions a {
+  transition: all 0.25s ease-in-out;
+  color: #00a087;
+  opacity: 0.6;
+  margin-left: 8px;
+}
+article.tweet footer .actions a:hover {
+  opacity: 1.0;
+  color: pink;
+}
+.colour-red{
+  color: red;
+}
+
+@media screen and (min-width: 768px) {
+  /* It should be okay as is, maybe look into what can be played with later */
+}
+
+@media screen and (min-width: 1200px) {
+  body{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+  }
+}

@@ -1,0 +1,27 @@
+body > header {
+  box-sizing: border-box;
+  width: 20%;
+  height: 400px;
+  min-width: 250px;
+  max-width: 400px;
+  margin: 30px;
+  flex-grow: 1;
+  flex-shrink: 3;
+  background-color: #a38200;
+  background-image: url("../images/asfalt-light.png");
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+body > header img {
+  margin: 25px;
+  align-self: center;
+  display: flex;
+  flex-shrink: 2;
+}
+
+h2 {
+  margin: 0;
+}
